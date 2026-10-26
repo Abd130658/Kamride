@@ -55,17 +55,12 @@ Vérifie ta version de PHP avec `php -v`.
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/<organisation-ou-utilisateur>/kamride.git
+git clone https://github.com/Abd130658/Kamride.git
 cd kamride
 
 # 2. Installer les dépendances PHP
 composer install
 
-# 3. Créer le fichier d'environnement
-cp .env.example .env        # sous Windows (cmd) : copy .env.example .env
-
-# 4. Générer la clé de l'application
-php artisan key:generate
 ```
 
 **5. Configurer la base de données.** Crée une base vide (par exemple `kamride`, interclassement `utf8mb4_unicode_ci`) puis adapte ces lignes dans ton fichier `.env` :
@@ -75,7 +70,7 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=kamride
-DB_USERNAME=root
+DB_USERNAME=
 DB_PASSWORD=
 ```
 
